@@ -4,12 +4,18 @@ plugins {
 
 android {
     namespace = "com.nikolayfrolov.testtask"
-    compileSdk = 33
+    compileSdk = 32
+
+    //  Подключение binding
+    buildFeatures   {
+        viewBinding = true
+    }
+    //
 
     defaultConfig {
         applicationId = "com.nikolayfrolov.testtask"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 32
         versionCode = 1
         versionName = "1.0"
 
@@ -30,10 +36,17 @@ android {
 
 dependencies {
 
-    implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.google.android.material:material:1.10.0")
+
+    implementation("androidx.appcompat:appcompat:1.4.1")
+    implementation("com.google.android.material:material:1.6.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-    testImplementation("junit:junit:4.13.2")
+    testImplementation("junit:junit:4.+")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+
+    // Совместимость с фрагментами
+    implementation("androidx.navigation:navigation-fragment:2.3.5")
+    implementation("androidx.navigation:navigation-ui:2.3.5")
+
+    implementation("androidx.legacy:legacy-support-v4:1.0.0")
 }
