@@ -2,4 +2,19 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+
+    <color name="transparent">#00000000</color>
+
+<!--    Цвета макета pizza_item-->
+    <color name="price_btn_stroke_and_text_color">#fd3a69</color>
+    <color name="pizza_title_text_color">@color/black</color>
+    <color name="pizza_ingredients_text_color">#b4b4b7</color>
+
+    <color name="tab_bar_background_color">#C3C3C3</color>
+
+    <color name="product_categories_btn_checked_background">#f4cdd7</color>
+    <color name="product_categories_btn_checked_text_color">#fd3a69</color>
+    <color name="product_categories_btn_background">@color/white</color>
+    <color name="product_categories_btn_text_color">#818181</color>
 </resources>

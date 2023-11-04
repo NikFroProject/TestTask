@@ -1,5 +1,14 @@
 <resources>
     <string name="app_name">TestTask</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+<!--    Главные разделы нижнего навигационного меню без контента-->
+    <string name="section_profile">Страница профиля пользователя</string>
+    <string name="section_basket">Корзина заказов пользователя</string>
+
+<!--    Названия категорий на странице меню-->
+    <string name="section_menu_category_1">Пицца</string>
+    <string name="section_menu_category_2">Комбо</string>
+    <string name="section_menu_category_3">Десерты</string>
+    <string name="section_menu_category_4">Напитки</string>
+
 </resources>

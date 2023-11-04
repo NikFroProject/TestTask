@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp">
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#f3f5f9"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                tools:ignore="UselessParent">
+
+                <ImageView
+                    android:id="@+id/pizza_photo"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+
+                    android:adjustViewBounds="true"
+
+                    android:importantForAccessibility="no" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginEnd="20dp"
+
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:id="@+id/pizza_title"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Ветчина и грибы"
+                    android:textAllCaps="false"
+                    android:textSize="8pt"
+                    android:textStyle="bold"
+                    android:textColor="@color/pizza_title_text_color"/>
+
+                <TextView
+                    android:id="@+id/pizza_ingredients"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+
+                    android:text="Ветчина, шампиньоны, увеличенная порция моцареллы, томатный соус"
+                    android:textAllCaps="false"
+                    android:textSize="6pt"
+                    android:textColor="@color/pizza_ingredients_text_color"
+
+                    android:layout_below="@id/pizza_title"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/pizza_price"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:minHeight="0dp"
+                    android:paddingVertical="8dp"
+
+                    android:text="от 345 р"
+                    android:background="@drawable/price_btn_background"
+                    android:textColor="@color/price_btn_stroke_and_text_color"
+                    android:textAllCaps="false"
+
+                    android:layout_below="@id/pizza_ingredients"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

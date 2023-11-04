@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--    На скорую руку решил сделать массив с названиями категорий здесь, но, в зависимости от потребностей, стоит решить откуда будут поступать данные о названиях категорий и их содержании-->
+    <string-array name="product_categories_title">
+        <item>Пицца</item>
+        <item>Комбо</item>
+        <item>Десерты</item>
+        <item>Напитки</item>
+    </string-array>
+
+    <string-array name="cities_select">
+        <item>Москва</item>
+        <item>Волгоград</item>
+        <item>Тамбов</item>
+    </string-array>
+
+</resources>
